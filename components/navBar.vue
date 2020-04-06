@@ -1,11 +1,20 @@
 <template>
-  <nav class="nav">
-    <div class="logo__container">
-      <Logo />
+  <header class="header">
+    <div class="logo">
+      <nuxt-link to="/">
+        <Logo />
+      </nuxt-link>
     </div>
-    <nuxt-link to="/">Home</nuxt-link>
-    <nuxt-link to="/About">About</nuxt-link>
-  </nav>
+
+    <nav class="nav">
+      <div class="nav__link">
+        <nuxt-link to="/">Home</nuxt-link>
+      </div>
+      <div class="nav__link">
+        <nuxt-link to="/About">About</nuxt-link>
+      </div>
+    </nav>
+  </header>
 </template>
 
 <script>
