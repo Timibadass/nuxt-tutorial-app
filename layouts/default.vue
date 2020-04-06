@@ -1,13 +1,23 @@
 <template>
   <div>
+    <Nav />
     <nuxt />
   </div>
 </template>
 
+<script>
+import Nav from "~/components/navBar.vue";
+export default {
+  components: {
+    Nav
+  }
+};
+</script>
+
 <style>
 html {
-  font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
-    Roboto, 'Helvetica Neue', Arial, sans-serif;
+  font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, sans-serif;
   font-size: 16px;
   word-spacing: 1px;
   -ms-text-size-adjust: 100%;
